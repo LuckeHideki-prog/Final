@@ -24,11 +24,9 @@
        <nav class="navbar navbar-expand-lg vanbar-light">
         <div class="collapse navbar-collapse" id="navbar">
             <a href="/" class="navbar-brand">
-            <img src="" alt="">
+            <img src="img\logo-unifil.svg" alt="">
         </a>
         <ul class="navbar-nav">
-            <li class="nav-item">
-                <a href="/create" class="nav-link">Criar</a>
             </li>
             <li class="nav-item">
                 <a href="/login" class="nav-link">Entrar</a>

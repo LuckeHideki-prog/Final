@@ -2,8 +2,8 @@
 
 @section('title', 'Produtos')
 
-<h1>Equipamentos</h1>
-
 @section('content')
+<h1>Equipamentos</h1>
+<head></head>
 
 @endsection
