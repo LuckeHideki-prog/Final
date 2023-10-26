@@ -28,28 +28,25 @@
         </a>
         <ul class="navbar-nav">
             <li class="nav-item">
-                <a href="/" class="nav-link">Reservas</a>
+                <a href="/create" class="nav-link">Criar</a>
             </li>
             <li class="nav-item">
-                <a href="/" class="nav-link">Criar</a>
+                <a href="/login" class="nav-link">Entrar</a>
             </li>
             <li class="nav-item">
-                <a href="/" class="nav-link">Entrar</a>
+                <a href="/register" class="nav-link">Cadastar</a>
             </li>
             <li class="nav-item">
-                <a href="/" class="nav-link">Cadastar</a>
+                <a href="/calendar" class="nav-link">Calendário</a>
             </li>
             <li class="nav-item">
-                <a href="/" class="nav-link">Calendário</a>
+                <a href="/dashboard" class="nav-link">Dashboard</a>
             </li>
             <li class="nav-item">
-                <a href="/" class="nav-link">Dashboard</a>
+                <a href="/equip" class="nav-link">Equipamentos</a>
             </li>
             <li class="nav-item">
-                <a href="/" class="nav-link">Equipamentos</a>
-            </li>
-            <li class="nav-item">
-                <a href="/" class="nav-link">Salas</a>
+                <a href="/rooms" class="nav-link">Salas</a>
             </li>
         </ul>
         </div>
