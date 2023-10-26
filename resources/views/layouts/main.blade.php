@@ -28,17 +28,17 @@
         </a>
         <ul class="navbar-nav">
             </li>
+            @guest
             <li class="nav-item">
-                <a href="/login" class="nav-link">Entrar</a>
+                <a href="/login" class="nav-link">Login</a>
             </li>
             <li class="nav-item">
                 <a href="/register" class="nav-link">Cadastar</a>
+            @endguest
+            @auth
             </li>
             <li class="nav-item">
                 <a href="/calendar" class="nav-link">Calendário</a>
-            </li>
-            <li class="nav-item">
-                <a href="/dashboard" class="nav-link">Dashboard</a>
             </li>
             <li class="nav-item">
                 <a href="/equip" class="nav-link">Equipamentos</a>
@@ -46,6 +46,18 @@
             <li class="nav-item">
                 <a href="/rooms" class="nav-link">Salas</a>
             </li>
+            <li class="nav-item">
+                <form action="/logout" method="POST">
+                @csrf
+                <a href="/logout"
+                class="nav-libk"
+                onclick="event.preventDefault();
+                this.closest('form').submit();"
+                >Logout
+                </a>
+                </form>
+            </li>
+            @endauth
         </ul>
         </div>
        </nav>

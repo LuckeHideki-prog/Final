@@ -26,10 +26,6 @@ Route::get('/userpage', function () {
     return view('userpage');
 });
 
-Route::get('/dashboard', function () {
-    return view('dashboard');
-});
-
 Route::get('/equip', function () {
     return view('equip');
 });
