@@ -46,3 +46,9 @@ Route::get('/produtos', function () {
 Route::get('/produtos_teste/{id}', function ($id = null) {
     return view('product',['id' => $id]);
 });
+
+Route::resource('events', 'EventController');
+
+Route::get('/login/{provider}', 'Auth\LoginController@redirectToProvider');
+Route::get('/login/{provider}/callback', 'Auth\LoginController@handleProviderCallback');
+
