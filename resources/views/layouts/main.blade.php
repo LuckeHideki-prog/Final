@@ -17,37 +17,47 @@
     <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
     </script>
-
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 </head>
-
-<body class="antialiased">
+<body>
     <header>
-        <nav class="navbar navbar-expandi-lg bg-light ">
-            <div class="container">
-                <a class="navbar-brand" href="#">Unifil Reserva</a>
-                <button type="button" class="navbar-toggle collapsed" data-bs-toggle="collapse"
-                    data-bs-target="#navbar" aria-expanded="false" aria-controls="navbar">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul>
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Link</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-</body>
-</header>
+       <nav class="navbar navbar-expand-lg vanbar-light">
+        <div class="collapse navbar-collapse" id="navbar">
+            <a href="/" class="navbar-brand">
+            <img src="" alt="">
+        </a>
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a href="/" class="nav-link">Reservas</a>
+            </li>
+            <li class="nav-item">
+                <a href="/" class="nav-link">Criar</a>
+            </li>
+            <li class="nav-item">
+                <a href="/" class="nav-link">Entrar</a>
+            </li>
+            <li class="nav-item">
+                <a href="/" class="nav-link">Cadastar</a>
+            </li>
+            <li class="nav-item">
+                <a href="/" class="nav-link">Calendário</a>
+            </li>
+            <li class="nav-item">
+                <a href="/" class="nav-link">Dashboard</a>
+            </li>
+            <li class="nav-item">
+                <a href="/" class="nav-link">Equipamentos</a>
+            </li>
+            <li class="nav-item">
+                <a href="/" class="nav-link">Salas</a>
+            </li>
+        </ul>
+        </div>
+       </nav>
+    </header>
 @yield('content')
 <footer>
     <p>Reserva Unifil &copy; 2023</p>
 </footer>
 </body>
-
 </html>

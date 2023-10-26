@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -12,42 +13,32 @@ use Illuminate\Support\Facades\Route;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
+use App\Http\Controllers\EventController;
 
-Route::get('/', function () {
+Route::get('/', [EventController::class,'index']);
+Route::get('/events/create',[EventController::class, 'create']);
 
-    $nome = "Lucas";
-    $idade =25;
-
-    $arr = [10,20,30,40,50];
-
-    $nomes =["Lucas","Nathália","Yuri","Josué"];
-
-    return view('welcome',
-    [
-        'nome' =>$nome,
-        'idade' => $idade,
-        'arr' => $arr
-    ]
-    );
+Route::get('/calendar', function () {
+    return view('calendar');
 });
 
-Route::get('/contact', function () {
-    return view('contact');
+Route::get('/userpage', function () {
+    return view('userpage');
 });
 
-Route::get('/produtos', function () {
-
-    $busca = request('search');
-
-
-    return view('products',['busca' => $busca]);
+Route::get('/dashboard', function () {
+    return view('dashboard');
 });
 
-Route::get('/produtos_teste/{id}', function ($id = null) {
-    return view('product',['id' => $id]);
+Route::get('/equip', function () {
+    return view('equip');
 });
 
-Route::resource('events', 'EventController');
+Route::get('/rooms', function () {
+    return view('rooms');
+});
+
+Route::get('/calendar', 'CalendarController@index');
 
 Route::get('/login/{provider}', 'Auth\LoginController@redirectToProvider');
 Route::get('/login/{provider}/callback', 'Auth\LoginController@handleProviderCallback');

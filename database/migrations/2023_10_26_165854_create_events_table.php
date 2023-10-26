@@ -14,6 +14,13 @@ return new class extends Migration
         Schema::create('events', function (Blueprint $table) {
             $table->id();
             $table->timestamps();
+            $table->text("description");
+            $table->string("room");
+            $table->boolean("equipment0");
+            $table->boolean("equipment1");
+            $table->boolean("equipment2");
+            $table->boolean("equipment3");
+            $table->boolean("equipment4");
         });
     }
 
