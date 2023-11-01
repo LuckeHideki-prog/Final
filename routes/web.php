@@ -19,7 +19,9 @@ Route::get('/', [EventController::class,'index']);
 Route::get('/events/create',[EventController::class, 'create']);
 Route::get('/events',[EventController::class, 'store']);
 
-Route::get('/events/room',[EventController::class, 'register']);
+Route::get('/events/room',[EventController::class, 'register1']);
+
+Route::get('/events/equip', [EventController::class, 'register2']);
 
 Route::get('/calendar', function () {
     return view('fullcalendar');
@@ -27,10 +29,6 @@ Route::get('/calendar', function () {
 
 Route::get('/userpage', function () {
     return view('userpage');
-});
-
-Route::get('/equip', function () {
-    return view('equip');
 });
 
 Route::get('/login/{provider}', 'Auth\LoginController@redirectToProvider');
@@ -43,3 +41,7 @@ Route::get('/dashboard', function () {
 Route::get('/getevent', 'FullCalendarController@getEvent')->name('getevent');
 Route::post('/createevent','FullCalendarController@createEvent')->name('createevent');
 Route::post('/deleteevent','FullCalendarController@deleteEvent')->name('deleteevent');
+
+Route::get('/delete', function () {
+    return view('delete');
+});

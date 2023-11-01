@@ -15,7 +15,6 @@
     <label for="title">Campus:</label>
     <input type="text" class="form-control" id="room" name="room" placeholder="Campus onde se econtra a sala">
 </div>
-   </select>
 </div>
 <input type="submit" class="btn btn-primary" value="Registar">
 </form>

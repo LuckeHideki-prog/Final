@@ -15,7 +15,16 @@
     <div class="form-group"></div>
             <label for="title">Sala:</label>
             <input type="text" class="form-control" id="room" name="room" placeholder="Sala da Reserva">
+
+    <div class="form-group">
+      <label for="date">Data de Inicio da Reserva:</label>
+      <input type="datetime-local" class="form-control" id="date" name="date">
     </div>
+    <div class="form-group">
+        <label for="date">Data do Termino da Reserva:</label>
+        <input type="datetime-local" class="form-control" id="date" name="date">
+      </div>
+        </div>
     <div class="form-group"></div>
             <label for="title">Ar Condicionado:</label>
             <select name="equipment0" id="equipment0" class="form-control">

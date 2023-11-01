@@ -81,3 +81,13 @@ footer p{
 #event-create-container select {
     font-size: 12px;
 }
+
+.msg{
+    background-color: #D4EDDA;
+    color: #155724;
+    border: 1px solid #c3e6c3CB;
+    width: 100%;
+    margin-bottom: 0;
+    text-align: center;
+    padding: 10px;
+}

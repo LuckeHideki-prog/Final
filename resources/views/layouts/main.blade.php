@@ -41,11 +41,17 @@
                 <a href="/calendar" class="nav-link">Calendário</a>
             </li>
             <li class="nav-item">
-                <a href="/equip" class="nav-link">Equipamentos</a>
+                <a href="events/equip" class="nav-link">Equipamentos</a>
             </li>
             <li class="nav-item">
                 <a href="/events/room" class="nav-link">Salas</a>
             </li>
+            <li class="nav-item">
+                <a href="/userpage" class="nav-link">Alterar</a>
+            </li>
+        </li>
+        <li class="nav-item">
+            <a href="/userpage" class="nav-link">Usuário</a>
             <li class="nav-item">
                 <form action="/logout" method="POST">
                 @csrf

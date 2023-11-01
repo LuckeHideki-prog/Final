@@ -18,8 +18,12 @@ class EventController extends Controller
         return view('events.create');
     }
 
-    public function register() {
+    public function register1() {
         return view('events.room');
+    }
+
+    public function register2() {
+        return view('events.equip');
     }
 
     public function store(Request $request) {
