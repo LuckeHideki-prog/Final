@@ -39,7 +39,12 @@ header{
 
 footer{
     text-align: center;
-    margin-top: auto;
+    background-color: #353e48;
+    color: #fff;
+    padding: 30px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
 }
 
 body{
@@ -52,3 +57,27 @@ div{
     margin: auto;
 }
 
+footer p{
+    margin-bottom: 0;
+}
+
+#event-create-container {
+    padding: 30px;
+
+}
+
+#event-create-container label {
+    font-weight: bold;
+}
+
+#event-create-container input {
+    font-size: 12px;
+}
+
+#event-create-container textarea {
+    font-size: 12px;
+}
+
+#event-create-container select {
+    font-size: 12px;
+}

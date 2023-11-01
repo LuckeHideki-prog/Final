@@ -21,6 +21,23 @@ class EventController extends Controller
     public function register() {
         return view('events.room');
     }
+
+    public function store(Request $request) {
+
+        $event = new Event;
+
+        $event->title = $request->title;
+        $event->description = $request->description;
+        $event->title = $request->title;
+        $event->title = $request->title;
+        $event->title = $request->title;
+        $event->title = $request->title;
+        $event->title = $request->title;
+
+        $event->save();
+
+        return redirect('/calendar')->whith('msg','Reserva criada com sucesso');
+    }
 }
 
 

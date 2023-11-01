@@ -7,19 +7,20 @@
     <div id="event-create-container" class="col-md-6 offset-md-3">
         <h1>Crie sua reserva </h1>
         <form action="/events" method="POST">
+         @csrf
         <div class="form-group"></div>
-        <label for="title">Descrição:</label>
-        <textarea name="description" id="description" class="form-control" placeholder="Descrição do Evento"></textarea>
+            <label for="title">Descrição:</label>
+            <textarea name="description" id="description" class="form-control" placeholder="Descrição da Reserva"></textarea>
     </div>
     <div class="form-group"></div>
-        <label for="title">Sala:</label>
-        <input type="text" class="form-control" id="room" name="room" placeholder="Sala da Reserva">
+            <label for="title">Sala:</label>
+            <input type="text" class="form-control" id="room" name="room" placeholder="Sala da Reserva">
     </div>
     <div class="form-group"></div>
-        <label for="title">Ar Condicionado:</label>
-       <select name="equipment0" id="equipment0" class="form-control">
-        <option value="0">Não</option>
-        <option value="1">Sim</option>
+            <label for="title">Ar Condicionado:</label>
+            <select name="equipment0" id="equipment0" class="form-control">
+            <option value="0">Não</option>
+            <option value="1">Sim</option>
        </select>
     </div>
     <div class="form-group"></div>
@@ -51,7 +52,7 @@
        </select>
     </div>
     <input type="submit" class="btn btn-primary" value="Criar">
-</form>
-    </div>
+    </form>
+</div>
 
 @endsection
