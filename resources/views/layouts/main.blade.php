@@ -44,7 +44,7 @@
                 <a href="/equip" class="nav-link">Equipamentos</a>
             </li>
             <li class="nav-item">
-                <a href="/rooms" class="nav-link">Salas</a>
+                <a href="/events/room" class="nav-link">Salas</a>
             </li>
             <li class="nav-item">
                 <form action="/logout" method="POST">
@@ -66,5 +66,7 @@
 <footer>
     <p>Reserva Unifil &copy; 2023</p>
 </footer>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
 </html>

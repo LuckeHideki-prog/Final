@@ -17,9 +17,10 @@ use App\Http\Controllers\EventController;
 
 Route::get('/', [EventController::class,'index']);
 Route::get('/events/create',[EventController::class, 'create']);
+Route::get('/events/room',[EventController::class, 'register']);
 
 Route::get('/calendar', function () {
-    return view('calendar');
+    return view('fullcalendar');
 });
 
 Route::get('/userpage', function () {
@@ -30,12 +31,13 @@ Route::get('/equip', function () {
     return view('equip');
 });
 
-Route::get('/rooms', function () {
-    return view('rooms');
-});
-
-Route::get('/calendar', 'CalendarController@index');
-
 Route::get('/login/{provider}', 'Auth\LoginController@redirectToProvider');
 Route::get('/login/{provider}/callback', 'Auth\LoginController@handleProviderCallback');
 
+Route::get('/dashboard', function () {
+    return view('dashboard');
+});
+
+Route::get('/getevent', 'FullCalendarController@getEvent')->name('getevent');
+Route::post('/createevent','FullCalendarController@createEvent')->name('createevent');
+Route::post('/deleteevent','FullCalendarController@deleteEvent')->name('deleteevent');

@@ -1,8 +1,8 @@
-    @extends('layouts.main')
+@extends('layouts.main')
 
-    @section('title', 'Criar Reserva')
+@section('title', 'Criar Reserva')
 
-    @section('content')
+@section('content')
 
     <div id="event-create-container" class="col-md-6 offset-md-3">
         <h1>Crie sua reserva </h1>
@@ -53,4 +53,5 @@
     <input type="submit" class="btn btn-primary" value="Criar">
 </form>
     </div>
-    @endsection
+
+@endsection

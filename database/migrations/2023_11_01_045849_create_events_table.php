@@ -8,26 +8,26 @@ return new class extends Migration
 {
     /**
      * Run the migrations.
+     *
+     * @return void
      */
-    public function up(): void
+    public function up()
     {
         Schema::create('events', function (Blueprint $table) {
-            $table->id();
+            $table->increments('id');
+            $table->string('title');
+            $table->dateTime('start');
+            $table->dateTime('end');
             $table->timestamps();
-            $table->text("description");
-            $table->string("room");
-            $table->boolean("equipment0");
-            $table->boolean("equipment1");
-            $table->boolean("equipment2");
-            $table->boolean("equipment3");
-            $table->boolean("equipment4");
         });
     }
 
     /**
      * Reverse the migrations.
+     *
+     * @return void
      */
-    public function down(): void
+    public function down()
     {
         Schema::dropIfExists('events');
     }

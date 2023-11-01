@@ -18,3 +18,13 @@ function handleProviderCallback($provider)
     return redirect('/home');
 }
 
+function redirectToGoogle()
+{
+    return Socialite::driver('google')->redirect();
+}
+
+function handleGoogleCallback()
+{
+    $user = Socialite::driver('google')->user();
+
+}
